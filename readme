@@ -4,10 +4,10 @@
 4. Insert keys in vpn/ca.crt and vpn/ta.key
 
     BUILD CONTAINER:
-# 5.    docker build -t test-container .
+5.    docker build -t test-container .
     
     DEPLOY CONTAINER:
-# 6.    docker run --cap-add=NET_ADMIN --device /dev/net/tun -p 3000:3000 test-container
+6.    docker run --cap-add=NET_ADMIN --device /dev/net/tun -p 3000:3000 test-container
 
 
     DOCKER COMMANDS:
@@ -15,7 +15,7 @@
 
 
 ////////////////////////////////
-# ВАЖНО
+ВАЖНО
 
 В заявке Rca указывался ip (172.23......). 
 В vpn/auth.txt указать login/password правильного «юзера» (VPN юзера, ip которого был в заявке rca),
