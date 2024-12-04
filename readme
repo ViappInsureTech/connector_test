@@ -1,0 +1,17 @@
+1. Rename env => .env
+2. Fill RCA_USER and RCA_PASS
+3. Replace «login» and «password» in /vpn/auth.txt (login and pass for vpn connection)
+4. Insert keys in ca.crt and ta.key
+
+    BUILD CONTAINER:
+5.    docker build -t test-container .
+    
+    DEPLOY CONTAINER:
+6.    docker run --cap-add=NET_ADMIN --device /dev/net/tun -p 3000:3000 test-container
+
+
+    DOCKER COMMANDS:
+    docker ps, docker stop <id>, docker rm <id> 
+
+    
+
